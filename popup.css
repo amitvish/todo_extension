@@ -1,0 +1,72 @@
+body {
+    width: 250px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  h2 {
+    display: none; /* Hide the title */
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  #taskInput {
+    width: calc(100% - 35px); /* Adjusted width */
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 5px; /* Add border radius for the input box */
+  }
+  
+  #addTask {
+    padding: 5px 10px;
+    background-color: #4CAF50; /* Green color for Add button */
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px; /* Add a margin between Add Task and the task list */
+    border-radius: 5px; /* Add border radius for the Add button */
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Remove margin for the list */
+    margin-top: 5px; /* Add a top margin for the task list */
+  }
+  
+  li {
+    margin-bottom: 10px; /* Increase margin between task boxes and Delete button */
+    background-color: #EEE; /* Grey background for added tasks only */
+    padding: 5px; /* Padding for the task box */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px; /* Add border radius for the task boxes */
+  }
+  
+  /* Delete button with rounded corners and margin */
+  .delete-button {
+    background-color: #FF3030; /* Red color for Delete button */
+    color: #FFF;
+    border: none;
+    padding: 3px 6px;
+    cursor: pointer;
+    border-radius: 5px; /* Add border radius for the Delete button */
+    margin-left: 5px; /* Add margin to separate Delete button from task box */
+  }
+  
+  /* Make task text editable */
+  .task-text[contenteditable="true"] {
+    flex-grow: 1;
+    border: 1px solid #AAA;
+    padding: 3px;
+    min-height: 20px; /* Minimum height for the task text box */
+    border-radius: 5px; /* Add border radius for the editable task text */
+  }
+  
